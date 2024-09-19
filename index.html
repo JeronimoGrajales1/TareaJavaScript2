@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script> 
+    let arr1 = [6, 12, 18, 24, 30];
+    let arr2 = [100, 200, 300, 400, 500];
+    let arr3 = [15, 25, 35, 45, 55];
+    let arr4 = [9, 18, 27, 36, 45];
+
+let sumArr1 = arr1.reduce((acc, curr) => acc + curr, 0);
+console.log("reduce - arr1:", sumArr1); 
+
+let sumArr2 = arr2.reduce((acc, curr) => acc + curr, 0);
+console.log("reduce - arr2:", sumArr2); 
+
+let sumArr3 = arr3.reduce((acc, curr) => acc + curr, 0);
+console.log("reduce - arr3:", sumArr3); 
+
+let sumArr4 = arr4.reduce((acc, curr) => acc + curr, 0);
+console.log("reduce - arr4:", sumArr4); 
+
+
+let filteredArr1 = arr1.filter(num => num > 20);
+console.log("filter - arr1:", filteredArr1); 
+
+let filteredArr2 = arr2.filter(num => num < 350);
+console.log("filter - arr2:", filteredArr2); 
+
+let filteredArr3 = arr3.filter(num => num > 30);
+console.log("filter - arr3:", filteredArr3); 
+
+let filteredArr4 = arr4.filter(num => num % 9 === 0);
+console.log("filter - arr4:", filteredArr4); 
+
+let mappedArr1 = arr1.map(num => num + 3);
+console.log("map - arr1:", mappedArr1); 
+
+let mappedArr2 = arr2.map(num => num - 50);
+console.log("map - arr2:", mappedArr2); 
+
+let mappedArr3 = arr3.map(num => num * 2);
+console.log("map - arr3:", mappedArr3); 
+
+let mappedArr4 = arr4.map(num => num / 3);
+console.log("map - arr4:", mappedArr4); 
+
+console.log("forEach - arr1:");
+arr1.forEach(num => console.log(num * 5)); 
+
+console.log("forEach - arr2:");
+arr2.forEach(num => console.log(num * 2)); 
+
+console.log("forEach - arr3:");
+arr3.forEach(num => console.log(num - 5)); 
+
+console.log("forEach - arr4:");
+arr4.forEach(num => console.log(num + 10)); 
+
+const greet = () => console.log("Bienvenido");
+greet(); 
+
+const double = num => num * 2;
+console.log(double(7)); 
+
+const subtract = (a, b) => a - b;
+console.log(subtract(10, 6)); 
+
+const divide = (x, y, z) => x / y / z;
+console.log(divide(100, 5, 2)); 
+
+const welcome = (name = "Usuario") => `Bienvenido, ${name}!`;
+console.log(welcome()); 
+console.log(welcome("Juan")); 
+
+
+    </script>
+    
+</body>
+</html>
